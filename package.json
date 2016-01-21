@@ -1,0 +1,43 @@
+{
+  "name": "Baymax",
+  "version": "0.0.0",
+  "private": true,
+  "author": "flof",
+  "description": "I am Baymax, your personal health care companion",
+  "dependencies": {
+    "cheerio": "0.19.0",
+    "cleverbot-node": "0.2.1",
+    "flip": "1.0.0",
+    "gitlab": "1.5.0",
+    "htmlparser": "1.7.7",
+    "hubot": "^2.17.0",
+    "hubot-ambush": "0.0.3",
+    "hubot-business-cat": "1.4.1",
+    "hubot-codinglove": "0.2.6",
+    "hubot-diagnostics": "0.0.1",
+    "hubot-gitsy": "0.8.3",
+    "hubot-google-images": "^0.2.6",
+    "hubot-google-translate": "^0.2.0",
+    "hubot-help": "^0.1.3",
+    "hubot-heroku-keepalive": "^1.0.2",
+    "hubot-maps": "0.0.2",
+    "hubot-pugme": "^0.1.0",
+    "hubot-redis-brain": "0.0.3",
+    "hubot-rocketchat": "0.0.24",
+    "hubot-rules": "^0.1.1",
+    "hubot-scripts": "^2.16.2",
+    "hubot-shipit": "^0.2.0",
+    "hubot-thank-you": "0.0.3",
+    "pad": "1.0.0",
+    "promise": "7.1.1",
+    "q": "1.4.1",
+    "redis": "2.4.2",
+    "soupselect": "0.2.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "bin/hubot -a rocketchat"
+  }
+}
