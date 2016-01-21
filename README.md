@@ -20,11 +20,13 @@
 
     d. `npm install` for dependencies
 
-3. Start
+## Use
+
+1. Start
 
 Simply launch `start.sh`
 
-4. Scripts
+2. Scripts
 
 Scripts are coffee scripts. Here is a list of communautary scripts:
 [hubot script catalog](https://hubot-script-catalog.herokuapp.com/)
@@ -32,7 +34,7 @@ Scripts are coffee scripts. Here is a list of communautary scripts:
 Here is the documentation for scripting:
 [scripting](https://github.com/github/hubot/blob/master/docs/scripting.md)
 
-5. Start and variables
+3. Start and variables
 
 The file `start.sh` contains the needed environment variables. New ones should
 be added here. Simply type `./start.sh` to launch the bot
