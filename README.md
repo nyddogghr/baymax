@@ -20,9 +20,9 @@
 
     d. `npm install` for dependencies
 
-3. Deploy
+3. Start
 
-Heroku remote URL is `git@heroku.com:baymax-arkena-bot.git`
+Simply launch `start.sh`
 
 4. Scripts
 
@@ -36,12 +36,3 @@ Here is the documentation for scripting:
 
 The file `start.sh` contains the needed environment variables. New ones should
 be added here. Simply type `./start.sh` to launch the bot
-
-For heroku, the variables need to be set separately. A scheduler also needs to
-be set to wake up the bot each morning. See [deploying on
-heroku](https://github.com/hubot-scripts/hubot-heroku-keepalive) and
-[hubot-heroku-keepalive](https://github.com/hubot-scripts/hubot-heroku-keepalive).
-
-For gitlab project listing, the account linked is not an OTTSM only account.
-Use environment variable `GITLAB_NAMESPACE_ID` (set to 126) to only show
-projects from OTTSM group.
