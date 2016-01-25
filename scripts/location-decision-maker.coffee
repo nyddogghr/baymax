@@ -45,7 +45,7 @@ class Locations
 module.exports = (robot) ->
   locations = new Locations robot
 
-  robot.respond /(remember|add) (.*) as a (.*) location/i, (msg) ->
+  robot.respond /(remember|add) (.*) as a(n)? (.*) location/i, (msg) ->
     locationname = msg.match[2]
     locationgroup = msg.match[3]
     locations.add locationgroup, locationname
@@ -54,7 +54,7 @@ module.exports = (robot) ->
     if locationname.toLowerCase() is "nandos"
       msg.send "Nom peri peri. My fav."
 
-  robot.respond /forget (.*) as a (.*) location/i, (msg) ->
+  robot.respond /forget (.*) as a(n)? (.*) location/i, (msg) ->
     locationname = msg.match[1]
     locationgroup = msg.match[2]
     locations.remove locationgroup, locationname
@@ -65,17 +65,19 @@ module.exports = (robot) ->
     locations.removeAll locationgroup
     msg.send "I've forgotten all locations from #{locationgroup}"
 
-  robot.respond /where can we go for (.*)\?$/i, (msg) ->
+  robot.respond /where can we go for (.*) \?$/i, (msg) ->
     locationgroup = msg.match[1]
     grouplocations = locations.group(locationgroup)
 
     if grouplocations.length > 0
+      message = ""
       for location in grouplocations
-        msg.send location
+        message += location + "\n"
+      msg.send message
     else
       msg.send "I don't know anywhere to go for #{locationgroup}"
 
-  robot.respond /where (should|shall) we go for (.*)\?$/i, (msg) ->
+  robot.respond /where (should|shall) we go for (.*) \?$/i, (msg) ->
     locationgroup = msg.match[2]
     grouplocations = locations.group(locationgroup)
 
