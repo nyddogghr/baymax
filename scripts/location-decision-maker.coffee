@@ -47,9 +47,9 @@ module.exports = (robot) ->
 
   robot.respond /(remember|add) (.*) as a(n)? (.*) location/i, (msg) ->
     locationname = msg.match[2]
-    locationgroup = msg.match[3]
+    locationgroup = msg.match[4]
     locations.add locationgroup, locationname
-    msg.send "Got it"
+    msg.send "Got it: added " + locationname + " in " + locationgroup + " group"
 
     if locationname.toLowerCase() is "nandos"
       msg.send "Nom peri peri. My fav."
