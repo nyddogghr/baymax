@@ -87,3 +87,14 @@ module.exports = (robot) ->
       location = msg.random grouplocations
 
       msg.send "I think you should go to #{location}"
+
+  robot.respond /(eat)|(manger)/, (msg) ->
+    locationgroup = "eating"
+    grouplocations = locations.group(locationgroup)
+
+    if grouplocations.length is 0
+      msg.send "I dont know anywhere to go for #{locationgroup}"
+    else
+      location = msg.random grouplocations
+
+      msg.send "I think you should go to #{location}"

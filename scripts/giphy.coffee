@@ -24,6 +24,7 @@ giphyMe = (msg, query, cb) ->
     .query
       q: query
       api_key: giphy.api_key
+      limit: 10
     .get() (err, res, body) ->
       response = undefined
       try
