@@ -33,6 +33,8 @@ giphyMe = (msg, query, cb) ->
         if images.length > 0
           image = msg.random images
           cb image.images.original.url
+        else
+          response = "No image found"
 
       catch e
         response = undefined
