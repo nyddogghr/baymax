@@ -88,7 +88,7 @@ module.exports = (robot) ->
 
       msg.send "I think you should go to #{location}"
 
-  robot.respond /(eat)|(manger)/, (msg) ->
+  robot.respond /(eat)|(manger)|(feed me)/, (msg) ->
     locationgroup = "eating"
     grouplocations = locations.group(locationgroup)
 
