@@ -56,7 +56,7 @@ module.exports = (robot) ->
 
   robot.respond /forget (.*) as a(n)? (.*) location/i, (msg) ->
     locationname = msg.match[1]
-    locationgroup = msg.match[2]
+    locationgroup = msg.match[3]
     locations.remove locationgroup, locationname
     msg.send "I've forgotten #{locationname} from #{locationgroup}"
 
