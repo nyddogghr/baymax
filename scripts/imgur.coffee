@@ -20,7 +20,7 @@ imgurMe = (msg, query, cb) ->
       .headers(Authorization: client_id)
       .query
         q: query
-        limit: 10
+        limit: 20
       .get() (err, res, body) ->
         images = JSON.parse(body)
         images = images.data
