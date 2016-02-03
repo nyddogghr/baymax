@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export ROCKETCHAT_URL='chat.ott.arkena.com'
-export ROCKETCHAT_ROOM='funny,sandbox2'
+export ROCKETCHAT_ROOM='funny,sandbox2,general,osm'
 export LISTEN_ON_ALL_PUBLIC=false
 export RESPOND_TO_DM=true
 export PORT=8082
