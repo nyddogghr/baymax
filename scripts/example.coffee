@@ -104,3 +104,6 @@ module.exports = (robot) ->
   robot.respond /sleep it off/i, (res) ->
     robot.brain.set 'totalSodas', 0
     res.reply 'zzzzz'
+
+  robot.respond /who's your master \?/i, (res) ->
+    res.send '@florian.paindorge is my beloved master'
