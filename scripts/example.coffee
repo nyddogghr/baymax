@@ -110,3 +110,7 @@ module.exports = (robot) ->
 
   robot.respond /who's your daddy \?/i, (res) ->
     res.send '@florian.paindorge is my daddy !'
+
+  robot.respond /I am your father/i, (res) ->
+    res.send 'Noooooooooooooo !'
+    res.send 'http://nooooooooooooooo.com/'
