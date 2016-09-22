@@ -20,22 +20,9 @@
 
     d. `npm install` for dependencies
 
-3. SSL
+3. Deploy
 
-Rocketchat adapter cannot connect to an https server. In order to be able to
-still use it, buildpacks and [stunnel](http://stunnel.org/) are needed.
-```
-heroku buildpacks:set https://github.com/timshadel/heroku-buildpack-stunnel.git
-heroku buildpacks:add https://github.com/heroku/heroku-buildpack-nodejs.git
-```
-
-Use conf/stunnel.conf to configure stunnel and then connect to localhost:8888.
-With this, the bot will be able to connect to localhost and stunnel will
-redirect to the secure chat.
-
-4. Deploy
-
-Heroku remote URL is `git@heroku.com:hal9000-arkena-bot.git`
+Heroku remote URL is `git@heroku.com:baymax-arkena-bot.git`
 
 ## Use
 
